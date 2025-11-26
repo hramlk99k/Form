@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+/* Global / page/reset styles */
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #222;
+  margin-bottom: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input, button {
+  font-family: inherit;
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Form / input styling */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #007BFF;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+th, td {
+  padding: 12px 16px;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e6f0ff;
 }
